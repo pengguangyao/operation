@@ -1,0 +1,44 @@
+.root {
+    min-width: 160px;
+    padding: 0 40px;
+    height: 40px;
+    background: #131313;
+    position: absolute;
+    z-index: 2000;
+    left: 50%;
+    top: 70px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%) translateY(-150px);
+    transition: transform .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.root_error {
+        color: #FF42CA;
+    }
+    &.root_success {
+        color: #128BF2;
+    }
+    .success {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/successIcon.png') no-repeat center;
+        background-size: 22px;
+        margin-right: 4px;
+    }
+    .error {
+        width: 22px;
+        height: 22px;
+        background: url('../../assets/errorIcon.png') no-repeat center;
+        background-size: 22px;
+        margin-right: 4px;
+    }
+    p{
+        position: relative;
+        top: 6px;
+    }
+}
